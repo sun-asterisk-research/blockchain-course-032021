@@ -1,0 +1,5 @@
+Nonce có độ dài 32bit nằm trong blockheader.
+Khi thực hiện hash sha256 với blockheader sẽ ra con số đặc biệt đó với kết quả bắt
+đầu bằng các số 0 tùy theo độ khó. 
+Các miner sẽ tìm số này cho block mới, asi là người tìm được nhanh nhất thì sẽ nhận được 
+coinbase và transaction fee.

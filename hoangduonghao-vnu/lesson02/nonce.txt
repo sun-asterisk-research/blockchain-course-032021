@@ -1,0 +1,3 @@
+Là 1 trường trong các trường của block header.
+Nonce có độ lớn là 32 bit - 4 byte. Khi kết hợp với các trường khác và hash (SHA-256) sẽ ra một con số.
+Nhiệm vụ của miner là phải thử lần lượt từ 0 tăng dần số nonce để con số đó thoả mãn một bất phương trình cho trước. Người tìm được số nonce đầu tiên sẽ được thưởng.

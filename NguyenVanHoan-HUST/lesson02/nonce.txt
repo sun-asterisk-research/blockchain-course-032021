@@ -1,0 +1,3 @@
+- nonce là số mà các miners tìm kiếm để tạo ra hash của block hợp lệ. 
+Các miners sẽ thực hiện tính toán nhiều lần với số nonce khác nhau để hash của khối đáp ứng các nhu cầu nhất định.
+Người tìm được số nonce nhanh nhất sẽ là người nhận được phần thưởng là một số BTC.  

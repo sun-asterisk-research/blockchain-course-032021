@@ -1,0 +1,4 @@
+base58==2.1.0
+cryptography==2.8
+ecdsa==0.16.1
+

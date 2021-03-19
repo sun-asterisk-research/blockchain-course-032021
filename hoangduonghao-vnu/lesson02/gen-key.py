@@ -17,20 +17,26 @@ class Ecdsa(object):
             "EllipticCurve", "name p a b g n h")
         self.__curve = EllipticCurve(
             "secp256k1",
+            # finite field Fp:
             p=0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F,
+            # Curve y^2 = x^3 + ax + b:
             a=0,
             b=7,
+            # Base point:
             g=(
                 # x
                 0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798,
                 # y
                 0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8
             ),
+            # order of g:
             n=0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141,
+            # cofactor:
             h=1
         )
 
     def __inverse_mod(self, a, m):
+        # Extended Euclidean algorithm
         m0 = m
         x, y = 1, 0
 
@@ -64,33 +70,45 @@ class Ecdsa(object):
         """ Return the result of point1 + point2 according to the group law. """
         if point1 is None:
             return point2
+
         if point2 is None:
             return point1
+
         x1, y1 = point1
         x2, y2 = point2
-        if x1 == x2 and y1 != y2:
+
+        if x1 == x2 and y1 != y2:            
             return None
-        if x1 == x2:
+
+        if x1 == x2:            
             m = (3 * x1 * x1 + self.__curve.a) * \
                 self.__inverse_mod(2 * y1, self.__curve.p)
         else:
             m = (y1 - y2) * self.__inverse_mod(x1 - x2, self.__curve.p)
+
         x3 = m * m - x1 - x2
         y3 = y1 + m * (x3 - x1)
+
         result = (x3 % self.__curve.p, -y3 % self.__curve.p)
+
         return result
 
     def __scalar_multiply(self, k, point):
         """ Double and point_add algorithm """
         if k % self.__curve.n == 0 or point is None:
             return None
+
         result = None
         addend = point
+
         while k:
             if k & 1:
+                # Add.
                 result = self.__add(result, addend)
+            # Double.
             addend = self.__add(addend, addend)
             k >>= 1
+
         assert self.__is_on_curve(result)
         return result
 
@@ -105,21 +123,24 @@ class Ecdsa(object):
 
 
 def createWalletAddress(public_key):
+    # SHA-256 hashing from ECDSA Public key:
     public_key_sha256Hashing = hashlib.sha256(
         binascii.unhexlify(public_key)).hexdigest()
-
+    
+    # RIPEMD-160 hashing:
     hash256_ridemp160Hashing = hashlib.new(
         'ripemd160', binascii.unhexlify(public_key_sha256Hashing))
     
+    # Add version byte:    
     add_version_number = '00' + hash256_ridemp160Hashing.hexdigest()
 
-    hash = add_version_number
-
+    # SHA-256 hashing 2 times:
+    hash = add_version_number   
     for x in range(1, 3):
         hash = hashlib.sha256(binascii.unhexlify(hash)).hexdigest()
 
+    # Append checksum:   
     checksum = hash[:8]
-
     appendChecksum = add_version_number + checksum
 
     bitcoinAddress = base58.b58encode(binascii.unhexlify(appendChecksum))

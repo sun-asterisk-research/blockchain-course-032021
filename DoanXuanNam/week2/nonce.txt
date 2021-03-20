@@ -1,0 +1,8 @@
+Giải thích ý nghĩa số nonce trong thuật toán đào bitcoin:
+    Số nonce là phần chính của thuật toán PoW( Proof of work ). Số none là 1 số 32 bit, miners cần
+phải tìm ra số nonce này bằng cách thử hàng triệu phép thử mỗi giây. Họ cần tìm ra số none phù hợp
+( gọi là golden nonce ) để thực hiện phép hash sao cho kết quả thu được nhỏ hơn hoặc bằng độ khó 
+của block. Nếu không đạt được độ khó này, miners cần phải bỏ giá trị này đi và thử giá trị nonce 
+mới. Trong thuật toán này, số nonce chính là tham số duy nhất bị thay đổi, các tham số còn lại đều
+được giữ nguyên, tuy nhiên chưa có biện pháp nào đẩy nhanh việc tìm ra golden nonce, ngoài phép thử.
+ 

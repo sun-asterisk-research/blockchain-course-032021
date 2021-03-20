@@ -1,1 +1,12 @@
-nonce bắt đầu từ gió
+Đầu tiên để hiểu về nonce thì phải hiểu về mining và hash:
+
+Cái việc hash thì mình không thể nào biết được giá trị đích của nó, giá trị sau khi mình hash ra là ngẫu nhiên.
+Chỉ cần thay đổi 1 bit thôi thì kết quả cũng khác rất nhiều, không thể dự đoán được.
+
+mining chính là thay đổi số nonce để tạo ra một số hash nhỏ hơn một giá trị nhất định (hay một điều kiện) để block được đưa vào trong khối
+nonce là một giá trị ngẫu nhiên để tính ra block hash, các miner sẽ cạnh tranh nhau giải bài toán một cách nhanh nhất để được block được đóng vào trong khối.
+
+ý nghĩa của nonce trong việc chứng minh nỗ lực giải toán:
+
+Nonce mà chúng ta cần tìm, được các máy chạy để tìm ra nonce phù hợp có thể hash ra một chuỗi thoả mãn điều kiện.
+Vì không thể hash ngược lại để tìm nonce nên chỉ có cách là thử sai hay vét cạn từ 0 cho đến hash nonce và thông tin trong block ra một chuỗi thoả mãn yêu cầu nào đó thì thôi. (thường là sẽ hash đến khi tìm được 4-6 số 0 ở đầu như 0x0000 hay 0x000000)

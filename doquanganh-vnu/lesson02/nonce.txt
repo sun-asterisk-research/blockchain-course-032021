@@ -1,0 +1,4 @@
+Nonce là số ngẫu nhiên có 32 bit sử dụng một lần.
+Nó được dùng để để kết hợp với Merke Root, timestamp, hash của các block trước,...
+để tạo ra giá trị hash. Nếu giá trị hash này nhỏ hơn hash mục tiêu (difficulty)
+thì người giải được bài toán đó sẽ có được block và đạt được sự đồng thuận.

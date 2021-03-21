@@ -1,0 +1,5 @@
+Nonce là từ viết tắt của "số chỉ được sử dụng một lần",
+là một số được thêm vào khối băm - hoặc mã hóa - trong một chuỗi khối
+mà khi được băm lại sẽ đáp ứng các hạn chế về mức độ khó.
+Nonce là con số mà các công cụ khai thác blockchain đang giải quyết.
+Khi giải pháp được tìm thấy, các công cụ khai thác blockchain được cung cấp tiền điện tử để trao đổi.

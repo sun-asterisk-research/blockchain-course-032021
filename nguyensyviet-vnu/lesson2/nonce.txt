@@ -1,0 +1,3 @@
+Số nonce là một số nguyên dương 32bit  
+Số nonce sẽ được dùng để thêm vào cùng với (timestamps + data + nonce) để hash ra một chuỗi.
+Rất nhiều nonce khác nhau sẽ được thử, với mỗi giá trị nonce khác nhau, hash sẽ được tính toán lại cho đến khi hash cuối cùng chứa số lượng bit 0 thích hợp .

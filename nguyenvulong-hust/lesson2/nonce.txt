@@ -1,4 +1,4 @@
 Nonce có độ dài 32 bit thuộc Block Header.
 Là một con số đặc biệt thòa mãn nêu ta thực hiện phép hash sha256 lên Block Header đó thì kết quả sẽ bắt đầu với các số 0 tùy theo độ khó được đặt ra.
 Nhiệm vụ của các miner là tìm được con số này cho các block mới. Ai tìm được con số này sớm nhất sẽ được thưởng coinbase và transaction fee.
-Phương pháp để tìm ra con số này là brute-force.
+Phương pháp để tìm ra con số này là brute-force

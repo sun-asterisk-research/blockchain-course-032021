@@ -1,1 +1,2 @@
-alo
+nonce là một số thực ngẫu nhiên mà các thợ đào cần tìm ra đầu tiên. Đây là con số được sử dụng 1 lần duy nhất, dùng để tạo ra hàm băm có giá trị nhỏ hơn độ khó mục tiêu của mạng lưới blockchain. 
+Cách để tìm ra con số này là thử lần lượt ngẫu nhiên (brute force).

@@ -1,0 +1,8 @@
+Nonce: number used once.
+
+Là một con số tùy ý dùng để hash cùng với Block Header để đảm bảo là giá trị hash của block nhỏ hơn giá trị 
+mà miner cần phải tìm để đẩy candidate block vào trong blockchain
+
+Nếu số Nonce đầu tiên không được ( thường bắt đầu từ số 0 ) thì tăng nó lên rồi tiếp tục hash cùng với Block Header. 
+
+Kết quả cuối cùng là tìm thấy một số Nonce mà kết quả hash của nó với Block Header là một giá trị nhỏ hơn giá trị cần thiết.

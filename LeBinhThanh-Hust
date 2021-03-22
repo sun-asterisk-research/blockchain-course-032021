@@ -1,1 +1,20 @@
-
+Giải thích về số nonce:
+Khi phần mềm khai thác bitcoin muốn thêm một khối mới vào blockchain, đây là quy trình nó tuân theo. Bất cứ khi nào một khối mới đến, tất cả nội dung của các khối sẽ được băm đầu tiên. Nếu hàm băm nhỏ hơn mục tiêu độ khó, thì nó sẽ được thêm vào blockchain và mọi người trong cộng đồng đều thừa nhận khối mới.
+Tuy nhiên, nó không đơn giản như vậy. Mining phải cực kỳ may mắn để có được một khối mới giống như vậy. Đây là nơi xuất hiện của nonce. Nonce là một chuỗi tùy ý được nối với băm của khối . Sau đó chuỗi nối này được băm lại và so sánh với mức độ khó. Nếu nó không nhỏ hơn mức độ khó, thì nonce được thay đổi và điều này tiếp tục lặp lại một triệu lần cho đến khi cuối cùng, các yêu cầu được đáp ứng. Khi điều đó xảy ra, khối sẽ được thêm vào blockchain.
+Tóm lại:
+•	Hàm băm của nội dung của khối mới được thực hiện.
+•	Một nonce (chuỗi ngẫu nhiên) được thêm vào hàm băm.
+•	Chuỗi mới được băm lại.
+•	Sau đó, băm cuối cùng được so sánh với mức độ khó và xem liệu nó có thực sự ít hơn mức đó hay không.
+•	Nếu không, thì nonce được thay đổi và quá trình lặp lại một lần nữa.
+•	Nếu có, thì khối sẽ được thêm vào chuỗi và sổ cái công khai được cập nhật và cảnh báo về việc bổ sung.
+•	Những người khai thác chịu trách nhiệm về việc này sẽ được thưởng bằng bitcoin.
+Nhớ thuộc tính số 6 của hàm băm? Sự thân thiện của câu đố?
+Với mọi đầu ra “Y”, nếu k được chọn từ phân phối có entropy tối thiểu cao thì không thể tìm thấy đầu vào x sao cho H (k | x) = Y.
+Vì vậy, khi nói đến khai thác bitcoin :
+•	K = Nonce
+•	x = băm của khối
+•	Y = mục tiêu khó khăn
+Toàn bộ quá trình là hoàn toàn ngẫu nhiên, không có quá trình suy nghĩ đằng sau việc lựa chọn các nonces. Nó chỉ là vũ phu thuần túy khi phần mềm tiếp tục tạo ra các chuỗi ngẫu nhiên cho đến khi họ đạt được mục tiêu của mình. Toàn bộ quy trình tuân theo giao thức PoW , về cơ bản có nghĩa là:
+•	Việc giải câu đố sẽ khó.
+•	Tuy nhiên, việc kiểm tra câu trả lời phải dễ dàng đối với tất cả mọi người. Điều này được thực hiện để đảm bảo rằng không có phương pháp nào được sử dụng để giải quyết vấn đề.

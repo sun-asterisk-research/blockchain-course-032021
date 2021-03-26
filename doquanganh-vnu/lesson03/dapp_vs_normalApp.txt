@@ -1,0 +1,11 @@
+- Cả 2 kiểu ứng dụng đều bao gồm front-end và back-end.
+- Đối với ứng dụng web thông thường, phần front-end 
+(gồm các file html, css, javascript), phần back-end để xử lý 
+các logic của ứng dụng và database sẽ được lưu trữ tại server. 
+Server là hệ thống tập trung (centralized system) sẽ có toàn quyền
+kiểm soát ứng dụng.
+- Đối với ứng dụng web blockchain, phần front-end (gồm các file html,
+css, web3js) được lưu trữ tại một web server, phần back-end gồm các 
+logic của ứng dụng và database sẽ được phân tán và lưu trữ tại các 
+node trong mạng lưới blockchain. Nói cách khác, không có hệ thống 
+máy chủ trung tâm trong ứng dụng blockchain.

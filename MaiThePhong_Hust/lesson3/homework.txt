@@ -1,0 +1,15 @@
+Homework week3
+So sánh sự khác nhau giữa web truyền thống và web blockchain
+
+Điểm chung giữa web thông thường và web blockchain đều có 2 phần đó là front-end và back-end
+Về phần front-end là phần liên quan đến giao diện của người dùng,khi lấy dữ liệu từ back-end thì dữ liệu đó được trả
+về vị trí nào.
+
+Về phần back-end 
+	Đối với web thông thường,sẽ lưu trữ dữ liệu vào trong database được quản lý bởi người lập trình viên hay database
+admin.Khi mà security bị tấn công thì dữ liệu có thể bị thay đổi hoặc bị xóa khỏi database
+	Đối với web blockchain sẽ bao gồm những node phi tập trung.Mỗi node tham gia vào việc quản trị: toàn bộ 
+các nodes sẽ xác nhận node mới.Để tham vào blockchain thì đa số các nodes phải đồng thuận.Cơ chế đồng thuận này sẽ 
+đảm bảo sự bảo mật của mạng lưới và khiến nó khó có thể giả mạo.Thêm vào đó dữ liệu là integrity và transparency
+Integrity: mọi người dùng có thể đảm bảo dữ liệu họ đang lấy không bị thay đổi và không bị gián đoạn
+Transparency: mọi người dùng có thể xác nhận blockchain được appended như thế nào .

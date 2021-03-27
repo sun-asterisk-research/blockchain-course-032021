@@ -1,0 +1,1 @@
+Nonce (số chỉ được sử dụng một lần) là số được thêm vào khối băm(hoặc mã hóa) trong một chuỗi khối mà khi được băm lại sẽ đáp ứng các giới hạn về mức độ khó. Số nonce là con số mà các công cụ khai thác blockchain đang giải quyết. Ai tìm được con số này đồng nghĩa với việc 1 block mới được thêm vào blockchain, sẽ được thưởng bằng tiền mã hóa.

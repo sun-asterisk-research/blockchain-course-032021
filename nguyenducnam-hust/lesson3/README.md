@@ -1,0 +1,24 @@
+# So sánh sự khác nhau giữa trang web thông thường và một ứng dụng web blockchain (Web2 vs Web3)
+## Khái niệm Web2 và Web3
+
+Web2 dùng để chỉ trang web trên toàn thế giới. Một mạng internet được thống trị bởi các công ty cung cấp dịch vụ để đổi lấy dữ liệu cá nhân của người dùng. Web3, trong ngữ cảnh của Ethereum, đề cập đến các ứng dụng phi tập trung chạy trên blockchain. Đây là những ứng dụng cho phép mọi người tham gia mà không cần kiếm tiền từ dữ liệu cá nhân của họ.
+
+## Những lợi ích chính của Web3
+Rất nhiều nhà phát triển đã lựa chọn việc xây dựng các ứng dụng phi tập trung vì sự phân quyền vốn có của Ethereum.
+1. Bất kỳ ai trong mạng cũng đều có quyền sử dụng dịch vụ.
+2. Không ai có thể chặn hoặc từ chối người dùng truy cập vào dịch vụ.
+3. Các giao dịch thanh toán được tích hợp thông qua native token, cụ thể là ether(ETH).
+
+## Ví dụ so sánh cụ thể
+| Web2                              | Web3                             |
+| :-------------------------------- | :------------------------------- |
+| Twitter có thể kiểm duyệt bất kỳ tài khoản hoặc bài đăng nào. | Các bài đăng trên Web3 là không thể bị kiểm duyệt do quyền điều khiển là phi tập trung. |
+| Dịch vụ thanh toán có thể quyết định không cho phép thanh toán cho một số loại công việc nhất định. | Ứng dụng thanh toán Web3 không yêu cầu dữ liệu cá nhân và không thể dừng việc thanh toán. |
+| Máy chủ cho các ứng dụng gig-economy có thể ngừng hoạt động và ảnh hưởng đến thu nhập của người lao động. | Máy chủ Web3 không thể ngừng hoạt động - họ sử dụng Ethereum, một mạng phi tập trung gồm hàng nghìn máy tính làm chương trình phụ trợ của họ. |
+
+## Những hạn chế của Web3
+1. Khả năng mở rộng - giao dịch chậm hơn trên web3 vì chúng được phân cấp. Các thay đổi đối với trạng thái, chẳng hạn như một khoản thanh toán, cần phải được xử lý bởi người khai thác và được phổ biến trên toàn mạng.
+2. UX - tương tác với các ứng dụng web3 có thể yêu cầu các bước bổ sung, phần mềm và giáo dục. Đây có thể là một trở ngại cho việc áp dụng.
+3. Chi phí - hầu hết các dapp thành công đều đưa một phần rất nhỏ code của họ lên blockchain vì nó đắt.
+
+Source: https://ethereum.org/vi/developers/docs/web2-vs-web3/

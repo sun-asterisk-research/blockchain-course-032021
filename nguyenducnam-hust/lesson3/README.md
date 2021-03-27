@@ -1,5 +1,5 @@
 # So sánh sự khác nhau giữa trang web thông thường và một ứng dụng web blockchain (Web2 vs Web3)
-## 1. Khái niệm Web2 và Web3
+## Khái niệm Web2 và Web3
 
 Web2 dùng để chỉ trang web trên toàn thế giới. Một mạng internet được thống trị bởi các công ty cung cấp dịch vụ để đổi lấy dữ liệu cá nhân của người dùng. Web3, trong ngữ cảnh của Ethereum, đề cập đến các ứng dụng phi tập trung chạy trên blockchain. Đây là những ứng dụng cho phép mọi người tham gia mà không cần kiếm tiền từ dữ liệu cá nhân của họ.
 
@@ -20,3 +20,5 @@ Rất nhiều nhà phát triển đã lựa chọn việc xây dựng các ứng
 1. Khả năng mở rộng - giao dịch chậm hơn trên web3 vì chúng được phân cấp. Các thay đổi đối với trạng thái, chẳng hạn như một khoản thanh toán, cần phải được xử lý bởi người khai thác và được phổ biến trên toàn mạng.
 2. UX - tương tác với các ứng dụng web3 có thể yêu cầu các bước bổ sung, phần mềm và giáo dục. Đây có thể là một trở ngại cho việc áp dụng.
 3. Chi phí - hầu hết các dapp thành công đều đưa một phần rất nhỏ code của họ lên blockchain vì nó đắt.
+
+Source: https://ethereum.org/vi/developers/docs/web2-vs-web3/

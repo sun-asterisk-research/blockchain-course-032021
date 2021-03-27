@@ -1,0 +1,5 @@
+Nonce = Number only used once 
++ là số được thêm vào để hash hay encrypt trong blockchain
++ Khi rehash sẽ rất khó khăn 
++ là số mà minner đang solve.Khi giải quyết đươc tức là tìm ra solution
+thì minner sẽ được phần thưởng là cryptocurrency

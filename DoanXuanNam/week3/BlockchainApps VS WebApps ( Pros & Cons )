@@ -1,1 +1,22 @@
-
+Ưu điểm và nhược điểm của dApp( decentralized application ) so với web app thông thường:
+	1.Ưu điểm
+		+) Phát triển đơn giản: Với việc sử dụng đa dạng các thuật toán để tìm kiems đồng thuận, dApp đáp ứng được nhu cầu của dev
+		về sự trừu tựơng các nghiệp vụ business cụ thể.
+		+) Cơ chế decentralized cho phép control linh hoạt: Nếu như các web app thông thường đều có tính centralized, tức là các control
+		đều được 1 center nào đó chỉ đạo, thì dApp được vận hành bởi cả một mạng lưới mà không cần sự chỉ đạo hay bị chi phối bởi bất kì
+		bên nào ( có tính chất của P2P ). Do vậy, các response trả về có thể sẽ nhanh chóng hơn khi ta muốn gửi đi các request.
+		+) An toàn cho dữ liệu: Data trong dApp cần phải có sự đồng thuận của tất cả các node trong mạng. Do vậy không có bất kì một bên
+		nào được tự ý thay đổi, đánh cắp dữ liệu. Dữ liệu gần như không thể bị mất đi.
+		+) Open soure: Với việc tất cả các mã nguồn của dApp được open soure, mọi người đều có thể kiểm soát và tạo nên sự minh bạch.
+		+) Tránh tự ý thu thập dữ liệu cá nhân trái phép: Hầu hết các mô hình centralized app thông thường có thể thu thập một phần nào đó
+		dữ liệu từ người dùng và coi đó là dữ liệu của họ. Nhưng với dApp, tất cả các dữ liệu là công khai.
+		+) Tiết kiệm chi phí: Với dApp, có thể sẽ không cần đến những server thật khủng, đội ngũ bảo trì hùng hậu, các công tác bảo trì tốn
+		thời gian, tiền bạc.
+	2.Nhược điểm
+		+) Nguy cơ an ninh: Với sự tham gia của nhiều node trong mạng để cùng vận hành dApp, nguy cơ an ninh tiềm ẩn, sự xâm nhập bất hợp phát,
+		mã độc lây lan ra toàn mạng sẽ là rất lớn.
+		+) Mất trải nghiệm người dùng: Ví dụ đơn giản nhất đó là dApp luôn cần public và private key( do dựa trên cơ chế blockchain ) để kí
+		giao dịch, đăng nhập. Điều này khó, vất vả hơn rất nhiều so với việc nhớ username, password.
+		+) Tốc độ chậm: Đôi khi, để chờ đợi 1 giao dịch thành công, dApp cần mất nhiều thời gian hơn so với web app thông thường. Do cơ chế
+		đồng thuận, 1 transaction nào đó đôi khi phải chờ đợi sự pending từ tất cả các node trong mạng, do đóthời gian xử lí này đôi khi mất
+		rất nhiều thời gian.

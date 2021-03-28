@@ -1,0 +1,4 @@
+Số nonce là một số nguyên dương có giá trị luôn thay đổi từ 0->4,294,967,295.
+Số nonce là một số rất quan trọng, tìm ra được số nonce là có thể tìm ra bitcoin.
+Khi đào bitcoin ta sẽ hash (timestamps + data + nonce) lại thành 1 chuỗi mã băm.Ta sẽ kiểm tra lần lượt từ số nonce trong khoảng từ {0;4,294,967,295}. Chuỗi đó nếu hợp lệ thì số nonce được tìm ra.
+

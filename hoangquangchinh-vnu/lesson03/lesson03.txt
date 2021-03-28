@@ -1,0 +1,9 @@
+// So sánh sự khác nhau giữa  kiến trúc của một ứng dụng web thông thường và một ứng dụng web blockchain
+-) Ứng dụng Web truyền thống:
+    +) Gồm có 2 phần là client side và server side. Phía client thì gồm có HTML, CSS, JS. ở Phía server có back end chịu trách nhiệm về logic nghiệp vụ của ứng dụng và cơ sở dữ liệu được lưu trong máy chủ.
+    +) Các request được gửi qua giao thức http/https
+-) Ứng dụng Web blockchain:
+    +) Một ứng dụng Blockchain được phân cấp và được phân phối trên tất cả các nút trong mạng Blockchain. Không có khái niệm về máy chủ web trung tâm.Các tệp giao diện người dùng HTML, css và js được lưu trữ trên máy chủ web.
+    +) Logic nghiệp vụ được viết trong smart contract và data nằm trên mỗi node của Blockchain. Quá trình xử lý xảy ra trên mỗi node.
+    +) Với ethereum network, sử dụng thư viện web3js giao tiếp với các ethereum node thông qua JSON RPC.
+

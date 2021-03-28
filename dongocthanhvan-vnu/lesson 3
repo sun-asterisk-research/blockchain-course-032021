@@ -3,4 +3,4 @@ Phần front-end ở web thông thường sẽ gồm (html,css,js) còn front-en
 Phần back-end của web thông thường để xử lý các logic của ứng dụng và database sẽ được lưu trữ tại server, phần back-end của web blockchain gồm các 
 logic của ứng dụng và database sẽ được phân tán và lưu trữ tại các node trong mạng lưới blockchain
 Chi phí cho các giao dịch web thông thường hầu như là miễn phí còn với web blockchain sẽ phải trả phí
-Tốc độ phản đồi web thông th
+Tốc độ phản hồi thông tin web thông thường nhanh hơn web blockchain

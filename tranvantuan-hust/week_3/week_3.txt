@@ -13,3 +13,4 @@
 	
 	- đây là tính PHI TẬP TRUNG của mọi ứng dụng blockchain
 		-> mọi người thường gọi đây là kiến trúc dapp (decentralized app)
+

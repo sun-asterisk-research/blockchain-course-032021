@@ -1,0 +1,15 @@
+---- điểm khác biệt giữa kiến trúc của web app thường vs web app dùng blockchain
+-- web thông thường:
+	- thường có 1 server đóng vai trò như 1 người quản lý,
+	kiểm soát mọi thứ của ứng dụng web
+		-> đây là trung tâm của web app -> nếu lỗi server -> sập web
+		
+	- thực tế có thể có nhiều hơn 1 server (vs các web lớn), nhưng nó không quan trọng
+	vì TÍNH TẬP TRUNG vẫn còn
+	
+-- web áp dụng blockchain:
+	- lúc này thay vì 1 (hoặc 1 số) server quản lý thì sẽ là 1 mạng lưới các node (có vai trò như nhau)
+	cùng vận hành -> web chỉ sập khi cả mạng lưới sập
+	
+	- đây là tính PHI TẬP TRUNG của mọi ứng dụng blockchain
+		-> mọi người thường gọi đây là kiến trúc dapp (decentralized app)

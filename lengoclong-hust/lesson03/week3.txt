@@ -1,0 +1,9 @@
+Ứng dụng web
+Người dùng tương tác với ứng dụng web thông qua một client như trình duyệt web, 
+hoặc qua API. Khi một client gửi yêu cầu tới server, server xử lý yêu cầu, tương tác
+với dữ liệu và/hoặc cache, đọc, viết, cập nhật cơ sở dữ liệu và trả về một phản hồi tới client.
+
+Ứng dụng Blockchain
+Mỗi client browser giao tiếp với chính instance của nó trên ứng dụng. Không có một 
+server trung tâm nào để các client kết nối tới. Để xây dựng các Dapps trên web, Ethereum 
+cung cấp một thư viện javascript gọi là web3.js, nó kết nối tới blockchain node của bạn.

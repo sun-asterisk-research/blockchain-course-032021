@@ -1,0 +1,1 @@
+“Số Nonce” trong Blockchain là một trường dài 32 bit (4 byte), giá trị được thiết lập để hash của block sẽ bao gồm một chuỗi các bit = 0 chạy ở đầu.

@@ -1,0 +1,21 @@
+**Kiến trúc của Web thông thường và Web Blockchain:
+
+* Web thông thường:
+- Frontend là giao diện để người dùng có thể tương tác với ứng dụng
+- Backend gồm 2 phần là database và logic để xử lý request từ người dùng/ thao tác với dữ liệu
+    + Tuy có thể backup server và database ở nhiều nơi, nhưng bản chất vẫn là dạng tập trung (server và database đều có thể đặt trên 1 máy tính)
+    + Người có quyền cao (super admin,..) có thể thêm, sửa, xóa database mà không để lại dấu vết gì
+    + Các thao tác với database không cần verify của nhiều người => tốc độ ổn định, hệ thống hoạt động tốt
+    + Do không cần nhiều người duy trì => đa số ứng dụng web thông thường thu rất ít hoặc không thu phí giao dịch
+
+* Web Blockchain:
+- Cũng có frontend hệt như web thông thường, đây là điểm chung giữa web Blockchain và web thường
+- Khác với Backend của web thông thường, web blockchain có hạ tầng Blockchain sẽ quản lý cả logic và database
+    + Cần có nhiều người, nhiều máy mới duy trì được 1 ứng dụng/1 mạng lưới hoạt động được, khác với việc server có thể chỉ là 1 máy của web thường
+    + Database được lưu trữ tại sổ cái phân tán, share chung cho tất cả các node trong mạng lưới
+        => Để có thể chỉnh sửa hay thêm mới cần sự đồng thuận của tất cả, khác với việc 1 người có quyền có thể tác động trực tiếp là database trên web thường
+        => Mức độ tin cậy cũng như bảo mật thông tin cao hơn nhiều web thường
+    + Tuy nhiên những use case yêu cầu tốc độ cao như truy xuất để hiển thị dữ liệu, thanh toán, .... sẽ lại tốn thời gian hơn nhiều => ảnh hưởng trải nghiệm người dùng
+    + Do là phi tập trung nên nhiều ứng dụng sẽ không có tổ chức, cơ quan nào đứng ra chịu trách nhiệm về sự cố liên quan đến ứng dụng
+        => Tuy được coi là bảo mật nhưng việc định danh qua địa chỉ mà không có thông tin thật (mail, tên, ..) cũng là một sự mập mờ, khó lấy 100% lòng tin của người dùng đại trà
+    + Cần nhiều người duy trì hoạt động và verify giao dịch => mất phí giao dịch

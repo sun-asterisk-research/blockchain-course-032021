@@ -1,0 +1,10 @@
+* Web thông thường:
+- Frontend là giao diện để người dùng có thể tương tác với ứng dụng. 
+- Khi người dùng gửi request tới server, server sẽ lấy yêu cầu từ frontend, lấy thông tin từ database để xử lý rồi trả lại kết quả cho người dùng.
+
+* Web Blockchain:
+- Frontend là giao diện để người dùng có thể tương tác với ứng dụng. (giống web thông thường)
+- Mỗi client browser giao tiếp với chính instance của nó trên ứng dụng. 
+- Cần có nhiều người, nhiều máy mới duy trì được 1 ứng dụng/1 mạng lưới hoạt động được.
+- Database được lưu trữ tại sổ cái phân tán, share chung cho tất cả các node trong mạng lưới.
+- Do là phi tập trung nên nhiều ứng dụng sẽ không có tổ chức, cơ quan nào đứng ra chịu trách nhiệm về sự cố liên quan đến ứng dụng.

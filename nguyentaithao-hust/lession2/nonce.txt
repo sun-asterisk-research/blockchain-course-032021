@@ -1,0 +1,6 @@
+- Nonce có độ dài 32 bit thuộc Block Header.
+- Nonce là giá trị được thiết lập để hash của block sẽ bao gồm một chuỗi các bit bằng 0 chạy ở đầu.
+- Là số đặc biệt để chứng minh một người nào đó đã đào.
+- Mỗi giá trị nonce khác nhau, hash sẽ được tính toán lại cho đến khi hash cuối cùng chứa số lượng bit 0 thích hợp và nhỏ hơn difficulty
+level hiện tại.
+- Nonce quyết định miner nào sẽ được trao phần thưởng khối và trả bằng tiền mã hóa.

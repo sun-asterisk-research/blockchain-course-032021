@@ -1,0 +1,8 @@
+Ứng dụng web thông thường : 
+-	Được chia thành hai phần chính là client và server.
+-	Phần Client bao gồm các file html, css, js . Phía backend chứa code chịu trách nhiệm về logic nghiệp vụ của ứng dụng và cơ sở dữ liệu
+Ứng dụng Blockchain: 
+-	Được phân cấp và được phân phối trên tất cả các nút trong mạng Blockchain. Không có khái niệm về máy chủ web trung tâm.
+-	Được truy cập bằng trình duyệt web và các tệp giao diện người dùng HTML, css và js được lưu trữ trên máy chủ web.
+-	Các file giao diện truy cập trực tiếp vào database của Blockchain được phân phối công khai.
+-	Cả logic nghiệp vụ được viết trong smart contract và dữ liệu đều nằm trên mỗi nút của Blockchain. Do đó, quá trình xử lý ứng dụng xảy ra trên mỗi nút.

@@ -1,0 +1,5 @@
+Nonce :
+	viết tắt của : number only used once
+	32 bit
+	đc sử dụng để băm giá trị của khối
+	sau khi thợ đào tìm thấy nonce -> hoàn thành khối -> thêm vào mạng bitcoin -> nhận thưởng	

@@ -1,0 +1,3 @@
+Số Nonce (Number only used once) là một số được thêm vào một khối được băm (hoặc được mã hóa) trong 
+một chuỗi khối, khi băm lại nó đáp ứng được các giới hạn của mức độ khó. Số nonce là thứ mà các 
+thợ đào phải giải quyết. Khi đã tìm ra giải pháp, các thợ đào được thưởng tiền mã hóa.
